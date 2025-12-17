@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import jakarta.persistance.*;
+import jakarta.v
 
 @Entity
 public class studentEntity{
@@ -13,6 +14,14 @@ public class studentEntity{
 
     @Email(message"Name is not Valid")
     private String email;
+
+    public void setId(long id){
+        this.id=id;
+    }
+    public long getId(){
+        return id;
+    }
+
     public studentEntity()
     {
 
